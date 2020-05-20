@@ -1,5 +1,5 @@
 # ITSP PROJECT - Team INCREDIBLES
-Learned python through (https://www.kaggle.com/learn/python)and earned a certificate :)
+Learned python through (https://www.kaggle.com/learn/python) and earned a certificate :)
 <br><br>
 topics learnt so far:
 * basics,loops and conditional statements
