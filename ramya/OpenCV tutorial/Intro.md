@@ -29,3 +29,26 @@ in imread() function,the second argument can take three values.
 * 0==iMREAD_GRAYSCALE(loads image in grayscale mode)
 * -1==iMREAD_UNCHANGED(loads image as such including alpha channel)
 
+## Read,write and show videos in opencv
+```import cv2
+cap= cv2.VideoCapture(0) #captures video
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+out= cv2.VideoWriter("output.avi", fourcc, 20.0, (640,480)) #name of window,fourcc var,frames per sec,width n height
+while(cap.isOpened()): #executes only when cap is opened
+	ret,frame=cap.read() #ret takes boolean whether it was read or not,frame takes instance 
+	if ret == True:
+		print(cap.get(cv2.CAP_PROP_FRAME_WIDTH)) #width of frame
+		print(cap.get(cv2.CAP_PROP_FRAME_HEIGHT)) #height of frame
+		out.write(frame)   #takes frame into out
+		gray= cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)   #converts instance to gray
+		cv2.imshow('frame',gray) #shows gray converted frame
+		if cv2.waitKey(1) == ord('q'): #quits window if q is tapped
+			break
+cap.release()
+out.release()
+cv2.destroyAllWindows()
+```
+
+
+
+
