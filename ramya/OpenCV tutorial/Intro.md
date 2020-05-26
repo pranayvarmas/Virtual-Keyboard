@@ -22,7 +22,8 @@ if k==27:
 	cv2.destroyAllWindows(); #if esc key is typed
 elif k==ord('s'):
 	cv2.imwrite('logo_copy.jpg',img)  #if s button is typed 
-	cv2.destroyAllWindows();```
+	cv2.destroyAllWindows();
+```
 in imread() function,the second argument can take three values.
 * 1==iMREAD_color(loads color image)
 * 0==iMREAD_GRAYSCALE(loads image in grayscale mode)
