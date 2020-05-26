@@ -8,6 +8,8 @@
 * Highly optimized library for numeriacl operations.
 * All OpenCV array structures are converted to-and-from NumPy arrays.
 * More convineient indexing system rather than using for loops.
-Installation Command:`pip install opencv-python,to check version of opencv:(in python shell)import cv2 and cv2.__version__` 
+Installation Command:
+`pip install opencv-python
+import cv2 and cv2.__version__ //to check version of opencv:(in python shell)` 
 
 
