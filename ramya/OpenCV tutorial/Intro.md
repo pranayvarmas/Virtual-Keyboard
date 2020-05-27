@@ -49,6 +49,13 @@ out.release()
 cv2.destroyAllWindows()
 ```
 
+## functions to edit image
+There are various functions like ```cv2.line(img, pt1, pt2, color(in bgr), thickness)``` , ```cv2.rectangle()```, ```cv2.arrowedLine()``` , ```cv2.circle()``` and ```cv2.putText(img,text,pt.,fontface,fontscale,thickness,linetype)```
+```img = cv2.imread('logo.png')
+font=cv2.FONT_HERSHEY_SIMPLEX
+img=cv2.putText(img,'opencv',(10,255), font, 4, (0,255,255), cv2.LINE_AA)
+```
+
 
 
 
