@@ -85,7 +85,7 @@ cv2.destroyAllWindows()
 * it is done by ```frame=cv2.putText()``` ,providing proper arguments
 * date and time can be shown by importing datetime module
 * this is just a practice problem of concepts learnt earlier
-* Syntax: ```cv2.putText(image, text, org, font, fontScale, color, thickness, lineType, bottomLeftOrigin)```
+* Syntax: ```cv2.putText(image, text, org, font, fontScale, color, thickness, lineType, bottomLeftOrigin)```<br>
 Parameters:
 	* image: It is the image on which text is to be drawn.
 	* text: Text string to be drawn.
