@@ -56,6 +56,12 @@ font=cv2.FONT_HERSHEY_SIMPLEX
 img=cv2.putText(img,'opencv',(10,255), font, 4, (0,255,255), cv2.LINE_AA)
 ```
 
+## Setting Camera Parameters-->
+* it is done by ```cap.set(CAP_PROP_FRAME_WIDTH, 720)``` or ```caap.set(3, 720)``` to change width and for height similarly except the number associated with it is '4'.
+* Even though we set width and height function for frame,OpenCV only allows some predefined resolutions like 640*480,1280*720 and 160*120
+* Basically intrepeter sets the nearest allowed resolution.For example,if you would set frame height and width as 20,20.It would automatically set its resolution closest to thisi.e. 160*120.
+* 160 * 120 is the shortest allwed resolution in opencv
+
 
 
 
