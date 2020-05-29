@@ -62,6 +62,29 @@ img=cv2.putText(img,'opencv',(10,255), font, 4, (0,255,255), cv2.LINE_AA)
 * Basically intrepeter sets the nearest allowed resolution.For example,if you would set frame height and width as 20,20.It would automatically set its resolution closest to thisi.e. 160*120.
 * 160 * 120 is the shortest allwed resolution in opencv
 
+## Text on Videos-->
+```import cv2
+import datetime
+cap = cv2.VideoCapture(0)
+cap.set(3,1208)
+cap.set(4, 720)
+while(cap.isOpened):
+    ret, frame = cap.read()
+    if ret:
+        details = "width: " + str(cap.get(3)) + " height: "+str(cap.get(4))
+        date = str(datetime.datetime.now())
+        font= cv2.FONT_HERSHEY_SIMPLEX
+        frame = cv2.putText(frame, date, (10,30), font, 1, (0, 255, 255), 5, cv2.LINE_AA)
+        cv2.imshow('frame', frame)
+    if cv2.waitKey(1) == ord('q'):
+        break;
+cap.release()
+cv2.destroyAllWindows()
+```
+* we add text details or date that is concatenated string with a font,size,color
+* it is done by ```frame=cv2.putText()``` ,providing proper arguments
+* date and time can be shown by importing datetime module
+* this is just a practice problem of concepts learnt earlier
 
 
 
