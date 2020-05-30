@@ -106,6 +106,9 @@ Parameters:
 * uint8 is used unsigned 8 bit integer(dtype argument in zeros()). And that is the range of pixel. We can't have pixel value more than 2^8 -1. Therefore, for images uint8 type is used. Whereas double is used to handle very big numbers
 * to create white screen we use ```numpy.ones()*number```,where number is the brightness of white.If we give number 0,we get a black scree,if 230-greyish close to white.
 
+## flags and params-->
+Flags are just numbers that mean different things in different functions. Flags are also sometimes inherent values that openCV supplies to a particular function.It means that in internal working of opencv it needs that parameter to be supplied however it is not of any use to the user. For example in the click event function, remove flags and param from the definition and see what you get. You'll actually get an error saying that only 3 parameters were supplied when 5 were neede
+
 
 
 
