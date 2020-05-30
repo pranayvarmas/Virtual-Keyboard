@@ -96,6 +96,16 @@ Parameters:
 	* thickness: It is the thickness of the line in px.
 	* lineType: This is an optional parameter.It gives the type of the line to be used.
 	* bottomLeftOrigin: This is an optional parameter. When it is true, the image data origin is at the bottom-left corner. 		  Otherwise,it is at the top-left corner.
+	
+## Mouse  click events-->
+* 'EVENT_FLAG_ALTKEY', 'EVENT_FLAG_CTRLKEY', 'EVENT_FLAG_LBUTTON', 'EVENT_FLAG_MBUTTON', 'EVENT_FLAG_RBUTTON', 'EVENT_FLAG_SHIFTKEY', 'EVENT_LBUTTONDBLCLK', 'EVENT_LBUTTONDOWN', 'EVENT_LBUTTONUP', 'EVENT_MBUTTONDBLCLK', 'EVENT_MBUTTONDOWN', 'EVENT_MBUTTONUP', 'EVENT_MOUSEHWHEEL', 'EVENT_MOUSEMOVE', 'EVENT_MOUSEWHEEL', 'EVENT_RBUTTONDBLCLK', 'EVENT_RBUTTONDOWN', 'EVENT_RBUTTONUP'(can be found by printing events in dir(cv2) like ```print(events=[i for i in dir(cv2) if "EVENTS" in i])```)
+* for creating effect for an event,we define a function ```def click_event(event, x, y, flag, param):```.When we click the event button by calling ```cv2.setMouseCallback(img,click_event)```,x and y of the clicked position gets inserted to the function's arguments and we get the assigned work in function click_event.
+
+## Drawing a black background using numpy-->
+* ```numpy.zeros()``` is used to make a black background.zeros() function is used to insert zeros in a matrix we provide,here we provide ```numpy.zeros((512,512,3),numpy.uint8)```
+* uint8 is used unsigned 8 bit integer(dtype argument in zeros()). And that is the range of pixel. We can't have pixel value more than 2^8 -1. Therefore, for images uint8 type is used. Whereas double is used to handle very big numbers
+* to create white screen we use ```numpy.ones()*number```,where number is the brightness of white.If we give number 0,we get a black scree,if 230-greyish close to white.
+
 
 
 
