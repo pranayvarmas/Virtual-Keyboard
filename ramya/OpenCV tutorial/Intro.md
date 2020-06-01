@@ -131,5 +131,11 @@ Flags are just numbers that mean different things in different functions. Flags 
 * ```b,g,r=cv2.split(img)``` splits img into three channels of blue,green and red respectively.
 * ```img=cv2.merge((b,g,r))``` give the the image we started with(the exact same image )
 
+## Bitwise operators-->
+* ```cv2.bitwise_and``` :arguments:src1,src2,dst=None,mask=None
+* ```cv2.bitwise_or```  :arguments:src1,src2,dst=None,mask=None
+* ```cv2.bitwise_xor``` :arguments:src1,src2,dst=None,mask=None
+* ```cv2.bitwise_not``` :arguments:src1,dst=None,mask=None
+
 
 
