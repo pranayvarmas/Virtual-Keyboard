@@ -129,7 +129,7 @@ Flags are just numbers that mean different things in different functions. Flags 
 	* remember , alpha+beta = 1 or 100(if we provide in decimals n percentages respectively)
 ### Functions to split ,merge
 * ```b,g,r=cv2.split(img)``` splits img into three channels of blue,green and red respectively.
-* ```img=cv2.merge((b,g,r)) give sthe the image we started with(the exact same image )
+* ```img=cv2.merge((b,g,r))``` give the the image we started with(the exact same image )
 
 
 
