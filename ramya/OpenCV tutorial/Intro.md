@@ -107,8 +107,29 @@ Parameters:
 * to create white screen we use ```numpy.ones()*number```,where number is the brightness of white.If we give number 0,we get a black scree,if 230-greyish close to white.
 
 ## flags and params-->
-Flags are just numbers that mean different things in different functions. Flags are also sometimes inherent values that openCV supplies to a particular function.It means that in internal working of opencv it needs that parameter to be supplied however it is not of any use to the user. For example in the click event function, remove flags and param from the definition and see what you get. You'll actually get an error saying that only 3 parameters were supplied when 5 were neede
+Flags are just numbers that mean different things in different functions. Flags are also sometimes inherent values that openCV supplies to a particular function.It means that in internal working of opencv it needs that parameter to be supplied however it is not of any use to the user. For example in the click event function, remove flags and param from the definition and see what you get. You'll actually get an error saying that only 3 parameters were supplied when 5 were needed
 
+## Editing images
+### Functions to know info about the images-->
+* ```img.shape``` which gives the tuple of rows,columns and channels
+* ```img.size``` which gives thetotal number of pixels accessed
+* ```img.dtype``` which gives datatype of our img (which is by default uint8)
+### Functions to add ROI at a specific place-->
+* we assign our ROI coordinates(top left corner of (x1,y1) and bottom right corner of (x2,y2)) to a variable with numpy indexing
+* for example, ```obj = img[y1:y2,x1:x2]```(numpy indexing)
+* And then,if we want to have the obj at x3,y3 to x4,y4 region, we do ```img[y3:y4,x3:x4]=obj```.Nowwe would get our ROI at a newer place too.
+### Functions to add two images-->
+* ```cv2.add()```
+	* void cv::add(InputArray src1,InputArray src2,OutputArray dst,InputArray mask = noArray(),int 	dtype = -1 )	
+	* we jst have to provide src1,src2 and remaining are there by default
+	* this adds two images but without a weighted average(we have addWeighted for that)
+* ```cv2.addWeighted()```
+	* void cv::addWeighted(InputArray src1,double alpha,InputArray src2,double beta,double gamma,OutputArray dst,int dtype = -1)		* src1 takes alpha weighted,src2-beta weighted and gamma is the scale we want to add to both src1 and src2
+	* dst(I)=saturate(src1(I)∗alpha+src2(I)∗beta+gamma)
+	* remember , alpha+beta = 1 or 100(if we provide in decimals n percentages respectively)
+### Functions to split ,merge
+* ```b,g,r=cv2.split(img)``` splits img into three channels of blue,green and red respectively.
+* ```img=cv2.merge((b,g,r)) give sthe the image we started with(the exact same image )
 
 
 
