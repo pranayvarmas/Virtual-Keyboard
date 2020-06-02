@@ -1,5 +1,5 @@
 # Filtering image using hsv-->
-* HSV -- Hue, Saturation, Value(See illustration)[https://www.researchgate.net/profile/Ravindran_G/publication/321126312/figure/fig1/AS:561582682722304@1510903153364/llustration-of-the-HSV-Color-Space-B-Color-Feature-Extraction-Color-feature-is-extracted.png]
+* HSV -- Hue, Saturation, Value(https://www.researchgate.net/profile/Ravindran_G/publication/321126312/figure/fig1/AS:561582682722304@1510903153364/llustration-of-the-HSV-Color-Space-B-Color-Feature-Extraction-Color-feature-is-extracted.png)[see illustration]
     * Hue gives bandwidth of colors
     * Saturation gives depth of pigment
     * Value gives brightness of color
