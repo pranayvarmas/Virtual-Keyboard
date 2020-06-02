@@ -1,6 +1,10 @@
 # Filtering image using hsv-->
-* HSV -- Hue, Saturation, Value[https://www.researchgate.net/profile/Ravindran_G/publication/321126312/figure/fig1/AS:561582682722304@1510903153364/llustration-of-the-HSV-Color-Space-B-Color-Feature-Extraction-Color-feature-is-extracted.png]
+* HSV -- Hue, Saturation, Value(See illustration)[https://www.researchgate.net/profile/Ravindran_G/publication/321126312/figure/fig1/AS:561582682722304@1510903153364/llustration-of-the-HSV-Color-Space-B-Color-Feature-Extraction-Color-feature-is-extracted.png]
     * Hue gives bandwidth of colors
+    * Saturation gives depth of pigment
+    * Value gives brightness of color
+* We can filter images using either BGR or HSV.(better to use HSV)
+* Here,we create trackbars of lower HSV values and higher HSV values so that we can pass that to array to mask the image to give masked resultant image.
     
 ```import numpy as np
 import cv2 as cv
@@ -33,3 +37,4 @@ while(True):
     if k== 27:
         break
 cv.destroyAllWindows()```
+* The mask function takes the lower and upper bound hsv values to take only that colored parts in total image ,and we pass this mask to and operator so that we get the required colored regions in resultant image.
