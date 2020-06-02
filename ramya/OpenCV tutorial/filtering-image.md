@@ -36,5 +36,6 @@ while(True):
     k=cv.waitKey(1)
     if k== 27:
         break
-cv.destroyAllWindows()```
+cv.destroyAllWindows()
+```
 * The mask function takes the lower and upper bound hsv values to take only that colored parts in total image ,and we pass this mask to and operator so that we get the required colored regions in resultant image.
