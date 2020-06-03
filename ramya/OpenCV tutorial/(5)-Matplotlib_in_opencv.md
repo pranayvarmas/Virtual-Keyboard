@@ -20,7 +20,7 @@
           th_3=cv2.threshold(img,50,255,THRESH_TRUNC)
           th_4=cv2.threshold(img,50,255,THRESH_TOZERO)
           th_5=cv2.threshold(img,50,255,THRESH_TOZERO_INV)
-          titles = ['Original image','Binary','inverse binary','trunc','tozero','tozero inverse']
+          titles = ['Original image','BINARY','BINARY_INV','TRUNC','TOZERO','TOZERO_INV']
           images= ['img,th_1,th_2,th_3,th_4,th_5]
           for i in range(6):
                plt.subplot(2,3,i+1),plt.imshow(images[i],'gray')
