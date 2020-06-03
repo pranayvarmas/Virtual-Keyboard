@@ -9,7 +9,7 @@
      plt.show()
      ```
 * Here,we dont get a desired image .Because the plt gives image in RBG format whereas img in cv2 by BGR format.So,we first convert image by   ```img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)```
-* See [matplotlib image](https://encrypted-tbn0.gstatic.com/images?                                                       q=tbn%3AANd9GcSmx3EvUDYdgJHbMk76d8AQsCBSijQI_BE2fbXU5nAgfappMPRE&usqp=CAU)
+* See [matplotlib image](https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQhuBPkNYgSGC0zv1LQ3gieLsCFE9bFmCOmeC5ZLFD8Y7oRdurP&usqp=CAU)
 * If we dont want to see x and y marks on axes,we can use ```plt.xticks([]),plt.yticks([])```
 * If we want to show set of images in one window-->
      * We list titles for all images,images array for storing all images
@@ -28,7 +28,7 @@
                plt.xticks[()],plt.yticks[()]
           plt.show()
           ```
-          
+    * [result](http://www.codebind.com/wp-content/uploads/2019/05/matplotlib-with-OpenCV-2.png)      
           
           
           
