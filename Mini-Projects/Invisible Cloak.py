@@ -44,7 +44,6 @@ while(True):
     mask= cv.inRange(hsv, lb, ub)
     masknot= cv.bitwise_not(mask)
     res= cv.bitwise_and(frame, frame, mask = masknot)
-    maskblack= cv.inRange(res, lbb, ubb )
     a= cv.bitwise_and(backg, backg, mask=mask)
     fres= cv.addWeighted(res,1,a,1,1)
     cv.imshow('frame', frame)
