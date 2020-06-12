@@ -1,1 +1,4 @@
 # Physics of Hologram
+* A hologram is a physical recording of an interference pattern which uses diffraction to reproduce a three-dimensional light field, resulting in an image which retains the depth, parallax, and other properties of the original scene
+* In simple terms, a hologram technology is a three-dimensional projection which can be seen without using any special equipment such as glasses. The image can be viewed from any angle, so as the user walks around the display the object will appear to move and shift realistically.
+* The hologram we see with eyes appears as 3-D,but actually those are 2-D films.They have motion parallax whch make them appear 3-D.
