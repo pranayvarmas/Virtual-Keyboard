@@ -1,7 +1,7 @@
 # Virtual-Keyboard
 * **Week 1**: 
   * learn python and modules in it like numpy,matplotlib and math to an extent
-	* getting started with github and having it as a repository of our work we are doing.
+  * getting started with github and having it as a repository of our work we are doing.
 
 * **Week 2**: 
   * Going deep in python and practising related problems on hackerrank,codecademy,codechef.
