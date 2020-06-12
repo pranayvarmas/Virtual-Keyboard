@@ -10,5 +10,7 @@ topics learnt so far:
   * math
   * matplotlib
   * NumPy<br><br>
+  
+  
 2.OpenCV tutorials and documentation
 Topics learnt in opencv:thresholding,contours,Morphological transformations,Object detection and tracking,canny edge detection,image blending,Image detection and tracking
